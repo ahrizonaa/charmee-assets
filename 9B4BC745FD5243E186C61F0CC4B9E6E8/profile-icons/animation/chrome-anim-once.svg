@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="16%" stop-color="#b4b8b8" />
+      <stop offset="43%" stop-color="#f3f3f3" />
+      <stop offset="87%" stop-color="#bababa" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+	<linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b4b8b8" />
+      
+      <stop offset="16%" stop-color="#eceded" />
+	  <stop offset="43%" stop-color="#b4b8b8" />
+      <stop offset="87%" stop-color="#efefef" />
+      <stop offset="100%" stop-color="#ededed" />
+    </linearGradient>
+  <filter id="chrome">
+
+	<!-- inner glow -->
+	<feOffset result="inner-glow" in="SourceGraphic" dx="0" dy="20" />
+	<feFlood flood-color="#ffffff" result="flood-white" />
+	<feComposite operator="out" in="flood-white" in2="SourceAlpha" result="comp" />
+	<feOffset result="comp" in="comp" dx="0" dy="4" />
+	<feMorphology in="comp" result="comp" operator="dilate" radius="2" />
+	<feGaussianBlur in="comp" result="comp" stdDeviation="2" />
+	<feComposite operator="in" in="comp" in2="SourceAlpha" result="comp" />
+    <feBlend in="SourceGraphic" in2="comp" mode="screen" />
+	
+	<!-- bevel -->
+	<feGaussianBlur stdDeviation="3" in="SourceAlpha" result="bumpMap"/>
+	<feMorphology in="bumpMap" result="bumpMap" operator="erode" radius="2" />
+	
+	<feDiffuseLighting in="bumpMap" 
+					  surfaceScale="1"
+					  diffuseConstant="1"
+					  result="shading">
+		<fePointLight id="light" x="-20" y="0" z="30">
+				<animate attributeName="x" values="-20;220;-20" dur="5s" calcMode="spline"
+						keySplines=".73 .18 .24 .87;
+									.73 .18 .24 .87;" repeatCount="1" />
+		</fePointLight>
+	  </feDiffuseLighting>
+	<feBlend in="flood-white" in2="shading" mode="multiply" result="comp2" />
+	<feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1" />
+	<feMorphology in="blur" result="blur" operator="erode" radius="7" />
+	<feComposite operator="in" in="comp2" in2="blur" result="comp2" />
+	
+	<feBlend in="comp2" in2="comp" result="output" mode="screen" />
+	<feBlend in="output" in2="SourceGraphic" result="output" mode="multiply" />
+	<feGaussianBlur in="output" result="output" stdDeviation="2" />
+	<feComposite operator="in" in="output" in2="SourceAlpha" result="output" />
+  </filter>
+  
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+</filter>
+</defs>
+<path d="m104.92 40c-9 0-16.832 1.8327-23.832 5.166-7.1667 3.5-13.001 8.0013-17.834 13.668-4.8333 5.6666-8.5 12-11 19-1.8333 5-2.834 9.9987-3.334 14.832h15.164c0.5-3.1667 1.166-6.3333 2.166-9.5 1.6667-5.5 4.334-10.499 7.834-14.832 3.3333-4.3333 7.666-8.0013 12.666-10.668s10.833-4.166 17.5-4.166c3 0 5.9994 0.33333 9.166 1 3 0.66667 6 1.834 9 3.334 2.8333 1.6667 5.668 3.666 8.168 6.166 2.5 2.6667 4.6666 5.8333 6.5 9.5l11.832-7.666c-3.66-7.667-9.33-13.835-16.83-18.668-7.66-4.667-16.66-7.166-27.16-7.166zm-56.004 66.67c0.66667 5 1.8347 9.8346 3.668 14.668 2.6666 7.3333 6.5 13.833 11.5 19.5 5 5.6667 10.833 10.332 17.666 13.832 6.6666 3.6667 14.167 5.334 22.334 5.334 4.5 0 9.1667-0.50066 14-1.834 4.6666-1.1667 9.1667-2.832 13.5-5.332 4.3333-2.1667 8.1667-5.1667 11.5-8.5s6-7.334 8-11.834l-12.5-6.834c-1.6666 3.6667-3.8334 6.8333-6.5 9.5-2.6667 2.6667-5.5006 4.8333-8.334 6.5-3.1667 1.6667-6.1667 3.0013-9.5 3.668-3.3333 0.83334-6.5 1.166-9.5 1.166-6 0-11.334-1.1673-16.334-3.834-5-2.5-9.3333-5.9987-13-10.332-3.8333-4.3333-6.666-9.1673-8.666-14.834-1.3333-3.5-2.166-7.0007-2.666-10.834z" transform="translate(3 5)" fill="#000000" stroke="#000000" stroke-width="2" filter="url(#shadow)" opacity="0.7" />
+<path d="m104.92 40c-9 0-16.832 1.8327-23.832 5.166-7.1667 3.5-13.001 8.0013-17.834 13.668-4.8333 5.6666-8.5 12-11 19-1.8333 5-2.834 9.9987-3.334 14.832h15.164c0.5-3.1667 1.166-6.3333 2.166-9.5 1.6667-5.5 4.334-10.499 7.834-14.832 3.3333-4.3333 7.666-8.0013 12.666-10.668s10.833-4.166 17.5-4.166c3 0 5.9994 0.33333 9.166 1 3 0.66667 6 1.834 9 3.334 2.8333 1.6667 5.668 3.666 8.168 6.166 2.5 2.6667 4.6666 5.8333 6.5 9.5l11.832-7.666c-3.66-7.667-9.33-13.835-16.83-18.668-7.66-4.667-16.66-7.166-27.16-7.166zm-56.004 66.67c0.66667 5 1.8347 9.8346 3.668 14.668 2.6666 7.3333 6.5 13.833 11.5 19.5 5 5.6667 10.833 10.332 17.666 13.832 6.6666 3.6667 14.167 5.334 22.334 5.334 4.5 0 9.1667-0.50066 14-1.834 4.6666-1.1667 9.1667-2.832 13.5-5.332 4.3333-2.1667 8.1667-5.1667 11.5-8.5s6-7.334 8-11.834l-12.5-6.834c-1.6666 3.6667-3.8334 6.8333-6.5 9.5-2.6667 2.6667-5.5006 4.8333-8.334 6.5-3.1667 1.6667-6.1667 3.0013-9.5 3.668-3.3333 0.83334-6.5 1.166-9.5 1.166-6 0-11.334-1.1673-16.334-3.834-5-2.5-9.3333-5.9987-13-10.332-3.8333-4.3333-6.666-9.1673-8.666-14.834-1.3333-3.5-2.166-7.0007-2.666-10.834z" fill="url(#gradient1)" stroke="url(#gradient2)" stroke-width="4" filter="url(#chrome)" />
+</svg>

@@ -1,0 +1,369 @@
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<style>
+.bubbles circle {
+  stroke: #fddfd2;
+  fill: none;
+}
+.bubbles > g > g:nth-of-type(3n) circle {
+  stroke: #feeee7;
+}
+.bubbles > g > g:nth-of-type(4n) circle {
+  stroke: #ffffff;
+}
+
+.bubbles-large {
+  overflow: visible;
+}
+.bubbles-large > g {
+  -webkit-transform: translateY(390px);
+          transform: translateY(390px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-large g:nth-of-type(1) {
+  -webkit-animation: up 6.5s;
+          animation: up 6.5s;
+}
+.bubbles-large g:nth-of-type(1) g {
+  -webkit-transform: translateX(68px);
+          transform: translateX(68px);
+}
+.bubbles-large g:nth-of-type(1) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-large g:nth-of-type(2) {
+  -webkit-animation: up 5.25s 250ms;
+          animation: up 5.25s 250ms;
+}
+.bubbles-large g:nth-of-type(2) g {
+  -webkit-transform: translateX(88px);
+          transform: translateX(88px);
+}
+.bubbles-large g:nth-of-type(2) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-large g:nth-of-type(3) {
+  -webkit-animation: up 6s 750ms;
+          animation: up 6s 750ms;
+}
+.bubbles-large g:nth-of-type(3) g {
+  -webkit-transform: translateX(136px);
+          transform: translateX(136px);
+}
+.bubbles-large g:nth-of-type(3) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-large g:nth-of-type(4) {
+  -webkit-animation: up 5.5s 1.5s;
+          animation: up 5.5s 1.5s;
+}
+.bubbles-large g:nth-of-type(4) g {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+.bubbles-large g:nth-of-type(4) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-large g:nth-of-type(5) {
+  -webkit-animation: up 6.5s 4s;
+          animation: up 6.5s 4s;
+}
+.bubbles-large g:nth-of-type(5) g {
+  -webkit-transform: translateX(132px);
+          transform: translateX(132px);
+}
+.bubbles-large g:nth-of-type(5) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+
+.bubbles-small {
+  overflow: visible;
+}
+.bubbles-small > g {
+  -webkit-transform: translateY(132px);
+          transform: translateY(132px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-small g circle {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.bubbles-small g:nth-of-type(1) {
+  -webkit-animation: up 5.25s;
+          animation: up 5.25s;
+}
+.bubbles-small g:nth-of-type(1) g {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(1) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-small g:nth-of-type(2) {
+  -webkit-animation: up 5.75s;
+          animation: up 5.75s;
+}
+.bubbles-small g:nth-of-type(2) g {
+  -webkit-transform: translateX(146px);
+          transform: translateX(146px);
+}
+.bubbles-small g:nth-of-type(2) circle {
+  -webkit-animation: wobble 3s ease-in-out;
+          animation: wobble 3s ease-in-out;
+}
+.bubbles-small g:nth-of-type(3) {
+  -webkit-animation: up 5.25s 250ms;
+          animation: up 5.25s 250ms;
+}
+.bubbles-small g:nth-of-type(3) g {
+  -webkit-transform: translateX(68px);
+          transform: translateX(68px);
+}
+.bubbles-small g:nth-of-type(3) circle {
+  -webkit-animation: wobble 3s 250ms ease-in-out;
+          animation: wobble 3s 250ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(4) {
+  -webkit-animation: up 5.75s 325ms;
+          animation: up 5.75s 325ms;
+}
+.bubbles-small g:nth-of-type(4) g {
+  -webkit-transform: translateX(180px);
+          transform: translateX(180px);
+}
+.bubbles-small g:nth-of-type(4) circle {
+  -webkit-animation: wobble 3s 325ms ease-in-out;
+          animation: wobble 3s 325ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(5) {
+  -webkit-animation: up 6s 125ms;
+          animation: up 6s 125ms;
+}
+.bubbles-small g:nth-of-type(5) g {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(5) circle {
+  -webkit-animation: wobble 3s 250ms ease-in-out;
+          animation: wobble 3s 250ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(6) {
+  -webkit-animation: up 5.13s 250ms;
+          animation: up 5.13s 250ms;
+}
+.bubbles-small g:nth-of-type(6) g {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+}
+.bubbles-small g:nth-of-type(6) circle {
+  -webkit-animation: wobble 3s 125ms ease-in-out;
+          animation: wobble 3s 125ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(7) {
+  -webkit-animation: up 6.25s 350ms;
+          animation: up 6.25s 350ms;
+}
+.bubbles-small g:nth-of-type(7) g {
+  -webkit-transform: translateX(94px);
+          transform: translateX(94px);
+}
+.bubbles-small g:nth-of-type(7) circle {
+  -webkit-animation: wobble 3s 325ms ease-in-out;
+          animation: wobble 3s 325ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(8) {
+  -webkit-animation: up 7s 200ms;
+          animation: up 7s 200ms;
+}
+.bubbles-small g:nth-of-type(8) g {
+  -webkit-transform: translateX(64px);
+          transform: translateX(64px);
+}
+.bubbles-small g:nth-of-type(8) circle {
+  -webkit-animation: wobble 3s 325ms ease-in-out;
+          animation: wobble 3s 325ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(9) {
+  -webkit-animation: up 6.25s 233ms;
+          animation: up 6.25s 233ms;
+}
+.bubbles-small g:nth-of-type(9) g {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
+.bubbles-small g:nth-of-type(9) circle {
+  -webkit-animation: wobble 3s 275ms ease-in-out;
+          animation: wobble 3s 275ms ease-in-out;
+}
+.bubbles-small g:nth-of-type(10) {
+  -webkit-animation: up 6s 900ms;
+          animation: up 6s 900ms;
+}
+.bubbles-small g:nth-of-type(10) g {
+  -webkit-transform: translateX(142px);
+          transform: translateX(142px);
+}
+.bubbles-small g:nth-of-type(10) circle {
+  -webkit-animation: wobble 2s 905ms ease-in-out;
+          animation: wobble 2s 905ms ease-in-out;
+}
+
+@-webkit-keyframes wobble {
+  33% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  66% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@keyframes wobble {
+  33% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  66% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+</style>
+
+<g class="bubbles">
+<g class="bubbles-large" stroke-width="7">
+	<g>
+		<g transform="translate(10 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(373 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(408 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(621 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(179 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+</g>
+
+<g class="bubbles-small" stroke-width="4">
+	<g>
+		<g transform="translate(147 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(255 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(573 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(429 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(91 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(640 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(321 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(376 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(376 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(497 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+</g>
+</g>
+<g id="fade" transform="translate(10 10) scale(0.9)">
+
+  
+  <defs id="defs120564"/>
+  <linearGradient id="3d_gradient2-logo-d5739de8-df84-4712-b4f4-476bade4a76a" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop120541"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop120543"/>
+  </linearGradient>
+  <linearGradient id="3d_gradient3-logo-d5739de8-df84-4712-b4f4-476bade4a76a" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad" gradientTransform="rotate(-30)">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop120546"/>
+    <stop offset="50%" stop-color="#cccccc" stop-opacity="1" id="stop120548"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop120550"/>
+  </linearGradient>
+  <path id="path120569" style="font-style:normal;font-weight:500;font-size:72px;line-height:1;font-family:'Raleway Medium Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle;fill:#f7a8b8;stroke:#f7a8b8;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" d="m 66.249993,83.166657 c 1.666689,-5.5 4.333333,-10.5 7.833333,-14.833333 3.333333,-4.333333 7.66669,-8 12.666666,-10.666667 5.000024,-2.666666 10.833334,-4.166666 17.499998,-4.166666 3,0 6,0.333333 9.16667,1 3.00002,0.666666 6.00002,1.833333 9,3.333333 2.83333,1.666667 5.66667,3.666667 8.16667,6.166667 2.5,2.666666 4.66666,5.833333 6.50002,9.5 l 11.83331,-7.666667 c -3.66667,-7.666667 -9.33333,-13.833333 -16.83333,-18.666667 -7.66667,-4.666666 -16.66667,-7.166666 -27.16667,-7.166666 -9.000001,0 -16.833311,1.833333 -23.833311,5.166666 -7.16669,3.5 -13.000023,8 -17.833356,13.666667 -4.833334,5.666667 -8.5,12 -11,19 -1.83331,5 -2.833334,10 -3.333334,14.833333 h 15.16669 c 0.5,-3.166667 1.166644,-6.333333 2.166644,-9.5 z m 72.333337,42.500003 c -1.66665,3.66666 -3.83334,6.83333 -6.5,9.5 -2.66667,2.66666 -5.49998,4.83333 -8.33334,6.5 -3.16666,1.66666 -6.16666,3 -9.5,3.66666 -3.33333,0.83334 -6.5,1.16667 -9.5,1.16667 -5.999974,0 -11.333331,-1.16667 -16.333308,-3.83333 -5.000023,-2.5 -9.333356,-6 -13.000023,-10.33334 -3.83331,-4.33333 -6.666666,-9.16666 -8.666666,-14.83333 -1.333334,-3.5 -2.166644,-7 -2.666644,-10.83333 h -15.16669 c 0.666667,5 1.833357,9.83333 3.666667,14.66666 2.666667,7.33334 6.5,13.83334 11.500023,19.5 4.999977,5.66667 10.833333,10.33334 17.666667,13.83334 6.666666,3.66666 14.166643,5.33333 22.333314,5.33333 4.5,0 9.16669,-0.5 14,-1.83333 4.66669,-1.16667 9.16669,-2.83334 13.5,-5.33334 4.33333,-2.16666 8.16666,-5.16666 11.5,-8.5 3.33333,-3.33333 6,-7.33333 8.00002,-11.83333 z" stroke-miterlimit="2"/>
+
+</g>
+
+
+</svg>
